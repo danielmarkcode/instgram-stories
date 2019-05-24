@@ -10,7 +10,6 @@ import { Story01Component } from './stories/story01/story01.component';
 import { Story02Component } from './stories/story02/story02.component';
 import { Story03Component } from './stories/story03/story03.component';
 import { Story04Component } from './stories/story04/story04.component';
-import { StoriesRoutingModule } from './stories/stories-routing.module';
 
 @NgModule({
   declarations: [
@@ -25,9 +24,7 @@ import { StoriesRoutingModule } from './stories/stories-routing.module';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    StoriesRoutingModule
-  ],
+    AppRoutingModule  ],
   providers: [],
   bootstrap: [AppComponent]
 })
