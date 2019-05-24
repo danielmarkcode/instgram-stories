@@ -1,0 +1,36 @@
+.container {
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  
+  .carousel-inner {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      width: 100%;
+    }
+  }
+  
+  .carousel-inner>.item>a>img,
+  .carousel-inner>.item>img,
+  .img-responsive,
+  .thumbnail a>img,
+  .thumbnail>img {
+    display: block;
+    max-width: 100%;
+    height: 100vh;
+  }
+  .carousel-control.left {
+    padding-right: 50vw;
+  }
+  .carousel-control.right {
+    padding-left: 50vw;
+  }
+  
