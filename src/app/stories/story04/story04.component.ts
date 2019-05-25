@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-story04',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Story04Component implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
+
 
   ngOnInit() {
+    this.startProgress();
+    this.goOut();
+
+  }
+
+  startProgress() {
     const elem = document.getElementById('myBar');
     let width = 1;
     const id = setInterval(frame, 300);
@@ -22,4 +30,13 @@ export class Story04Component implements OnInit {
       }
     }
   }
+
+  goOut() {
+    setTimeout(() => {
+      this.router.navigate(['/highlights']);
+    }, 30000);
+  }
+
+
 }
+
